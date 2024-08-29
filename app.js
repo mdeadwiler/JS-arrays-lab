@@ -153,9 +153,18 @@ Hint: Initialize the `odds` variable to an empty array before the iteration.
 
 Complete Exercise 11 in the space below:
 */
+/*arr.forEach((element) => {
+console.log(element);
+});*/
+
 
 const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
-
-
+let odds = [];
+nums.forEach((oddNums) => {
+   console.log(odds);
+   if (oddNums % 2) {
+   odds.push(oddNums)
+   }
+})
 
 console.log('Exercise 11 result:', odds);
